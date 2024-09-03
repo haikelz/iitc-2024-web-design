@@ -1,9 +1,9 @@
 export default function App() {
   return (
-    <div>
-      <div>
-        <h1 className="font-bold text-2xl">Test dari Tailwind</h1>
-      </div>
-    </div>
+    <main className="w-full flex justify-center items-center">
+      <section className="w-full max-w-7xl">
+        <h1 className="font-bold text-2xl">Test</h1>
+      </section>
+    </main>
   );
 }
