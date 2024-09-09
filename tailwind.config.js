@@ -8,6 +8,7 @@ export default {
         pineGreen: "#0B7A75",
         darkVanilla: "#D7C9AA",
         burntUmber: "#7B2D26",
+        lotion: "#FAFAFA",
       },
     },
   },

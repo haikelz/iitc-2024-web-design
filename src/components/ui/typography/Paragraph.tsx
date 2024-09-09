@@ -1,16 +1,10 @@
 import { tw } from "@/lib/utils";
-import { HTMLAttributes } from "react";
-
-type ParagraphProps = HTMLAttributes<HTMLParagraphElement>;
+import { ParagraphProps } from "@/types";
 
 export function Paragraph({ className, children, ...props }: ParagraphProps) {
   return (
     <p
-      className={tw(
-        "text-base font-normal leading-[1.75] tracking-wide",
-        "md:leading-[1.7777778]",
-        className
-      )}
+      className={tw("text-xl font-medium leading-relaxed", className)}
       {...props}
     >
       {children}
