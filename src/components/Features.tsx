@@ -48,7 +48,7 @@ const featuresList = [
 
 export default function Features() {
   return (
-    <section id="features" className="px-8 py-24 bg-lotion">
+    <section id="features" className="px-8 py-24 w-full bg-lotion">
       <div className="flex justify-between items-center w-full">
         <Heading as="h2" className="w-[600px]">
           We have provided quality material materials that you can easily access{" "}
