@@ -10,7 +10,7 @@ export default function About() {
           draggable="false"
           className="w-64 h-64"
         />
-        <div>
+        <div className="ml-5">
           <Heading as="h2">
             Building the Future with Interactive and Quality Education
           </Heading>
@@ -22,8 +22,8 @@ export default function About() {
           </Paragraph>
         </div>
       </div>
-      <div className="flex justify-between items-start w-full">
-        <div>
+      <div className="flex justify-between items-start w-full gap-10">
+        <div className="mt-5">
           <Heading as="h2">
             Creating a Smart Young Generation Through Digital Education
           </Heading>
