@@ -4,7 +4,7 @@ import { Heading, Paragraph } from "./ui/typography";
 
 export default function Contact() {
   return (
-    <section className="w-full px-8 flex space-x-10">
+    <section className="w-full p-8 flex space-x-10">
       <div className="flex-none bg-darkSlateGray rounded-xl p-10 w-2/5">
         <Heading as="h3" className="text-[32px] text-white">
           Contact Information
