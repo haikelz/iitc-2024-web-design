@@ -22,7 +22,7 @@ export default function Banner() {
             <Input
               type="text"
               placeholder="Find your needs"
-              className="w-96 h-12 pl-12"
+              className="w-96 h-12 pl-12 outline-none"
             />
           </div>
           <Button type="button" aria-label="search">

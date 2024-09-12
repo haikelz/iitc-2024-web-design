@@ -1,11 +1,8 @@
-import { ChevronDown, LucideIcon } from "lucide-react";
+import { tw } from "@/lib/utils";
+import { AccordionProps } from "@/types";
+import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { Heading, Paragraph } from "./typography";
-
-type AccordionProps = {
-  title: string;
-  icon: LucideIcon;
-};
 
 export default function Accordion({ title, icon }: AccordionProps) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -14,8 +11,13 @@ export default function Accordion({ title, icon }: AccordionProps) {
 
   return (
     <div className="flex items-start justify-between w-[784px] max-w-full">
-      <div className="flex justify-center items-start">
-        <div className="border-gray-300 rounded-md border-2 p-1 mr-5">
+      <div
+        className={tw(
+          "flex justify-center",
+          isOpen ? "items-start" : "items-center"
+        )}
+      >
+        <div className="border-gray-300 rounded-lg border-[1.5px] p-1 mr-5">
           <Icon />
         </div>
         <div>

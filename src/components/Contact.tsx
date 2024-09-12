@@ -4,7 +4,7 @@ import { Heading, Paragraph } from "./ui/typography";
 
 export default function Contact() {
   return (
-    <section className="w-full px-8 py-20">
+    <section id="contact" className="w-full px-8 py-20">
       <div className="w-full p-4 rounded-xl bg-[#FAFAFA] flex justify-center items-start space-x-10">
         <div className="flex-none bg-darkSlateGray rounded-xl p-10 w-2/5">
           <Heading as="h3" className="text-[32px] text-white">
@@ -51,7 +51,7 @@ export default function Contact() {
                 <label htmlFor="firstName">First Name</label>
                 <input
                   type="text"
-                  className="border-b-2 border-[#19535f]"
+                  className="border-b-2 bg-transparent py-2 outline-none border-[#19535f]"
                   placeholder="Max"
                 />
               </div>
@@ -59,8 +59,8 @@ export default function Contact() {
                 <label htmlFor="lastName">Last Name</label>
                 <input
                   type="text"
-                  className="border-b-2 border-[#19535f]"
-                  placeholder="Max"
+                  className="border-b-2 bg-transparent py-2 outline-none border-[#19535f]"
+                  placeholder="Verstappen"
                 />
               </div>
             </div>
@@ -69,16 +69,16 @@ export default function Contact() {
                 <label htmlFor="email">Mail</label>
                 <input
                   type="email"
-                  className="border-b-2 border-[#19535f]"
-                  placeholder="Max"
+                  className="border-b-2 bg-transparent py-2 outline-none border-[#19535f]"
+                  placeholder="maxverstappen@gmail.com"
                 />
               </div>
               <div className="flex flex-col space-y-2">
                 <label htmlFor="phone">Phone</label>
                 <input
                   type="text"
-                  className="border-b-2 border-[#19535f]"
-                  placeholder="Max"
+                  className="border-b-2 bg-transparent py-2 outline-none border-[#19535f]"
+                  placeholder="+62 812 6657 3450"
                 />
               </div>
             </div>
@@ -86,8 +86,8 @@ export default function Contact() {
               <label htmlFor="message">Message</label>
               <input
                 type="text"
-                className="border-b-2 border-[#19535f]"
-                placeholder="Max"
+                className="border-b-2 bg-transparent py-2 outline-none border-[#19535f]"
+                placeholder="Write your message..."
               />
             </div>
           </div>

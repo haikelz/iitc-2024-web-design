@@ -14,7 +14,7 @@ import { Heading, Paragraph } from "./ui/typography";
 
 export default function Faq() {
   return (
-    <section className="flex justify-center px-8 py-20">
+    <section id="faq" className="flex justify-center px-8 py-20">
       <div className="flex flex-col">
         <div className="text-center">
           <Heading as="h2">Frequently Asked Question</Heading>
@@ -22,7 +22,7 @@ export default function Faq() {
             Quick answers to questions you may here
           </Paragraph>
         </div>
-        <div className="space-y-6 mt-10">
+        <div className="space-y-8 mt-10">
           <Accordion icon={GraduationCap} title="What is EduVerse?" />
           <Accordion icon={MonitorCog} title="Who can use this platform?" />
           <Accordion icon={FileClock} title="What is a Flash Quiz?" />
