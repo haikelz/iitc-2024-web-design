@@ -10,7 +10,7 @@ export default function Accordion({ title, icon }: AccordionProps) {
   const Icon = icon;
 
   return (
-    <div className="flex items-start justify-between w-[784px] max-w-full">
+    <div className="flex items-start justify-between md:w-[784px] max-w-full">
       <div
         className={tw(
           "flex justify-center",
@@ -23,7 +23,7 @@ export default function Accordion({ title, icon }: AccordionProps) {
         <div>
           <Heading as="h4">{title}</Heading>
           {isOpen ? (
-            <Paragraph className="mt-4">
+            <Paragraph className="mt-4 text-justify">
               EduVerse is an online learning platform designed for high school
               students. We offer learning materials in the form of readings,
               videos, and interactive quizzes to help students understand each

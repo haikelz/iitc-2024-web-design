@@ -14,7 +14,7 @@ import { Heading, Paragraph } from "./ui/typography";
 
 export default function Faq() {
   return (
-    <section id="faq" className="flex justify-center px-8 py-20">
+    <section id="faq" className="flex justify-center px-6 py-20">
       <div className="flex flex-col">
         <div className="text-center">
           <Heading as="h2">Frequently Asked Question</Heading>

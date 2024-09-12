@@ -1,11 +1,13 @@
+import Button from "./ui/Button";
+
 export default function Header() {
   return (
-    <header className="w-full">
-      <nav className="flex justify-between p-6 items-center w-full">
+    <header className="w-full fixed top-0 z-50 bg-white/80 backdrop-blur-md">
+      <nav className="flex justify-between py-4 px-6 items-center w-full">
         <a href="" className="font-bold">
           Logo
         </a>
-        <ul className="flex font-semibold space-x-12">
+        <ul className="md:flex font-semibold hidden space-x-12">
           <li>
             <a href="/">Home</a>
           </li>
@@ -23,13 +25,13 @@ export default function Header() {
           </li>
         </ul>
         <a href="/auth/login">
-          <button
+          <Button
             type="button"
             aria-label="login"
             className="rounded-full bg-darkSlateGray text-white font-bold px-5 py-2"
           >
             Login
-          </button>
+          </Button>
         </a>
       </nav>
     </header>
