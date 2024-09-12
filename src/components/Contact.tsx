@@ -1,4 +1,11 @@
-import { Mail, MapPin, Phone } from "lucide-react";
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
+  Mail,
+  MapPin,
+  Phone,
+} from "lucide-react";
 import Button from "./ui/Button";
 import { Heading, Paragraph } from "./ui/typography";
 
@@ -94,6 +101,20 @@ export default function Contact() {
           <div className="flex justify-end mt-20">
             <Button className="py-4 px-8 rounded-md">Send Message</Button>
           </div>
+        </div>
+        <div className="flex justify-center w-fit items-center">
+          <a href="https://tiktok.com">
+            <img src="/images/tiktok.svg" alt="tiktok" />
+          </a>
+          <a href="https://instagram.com">
+            <Instagram />
+          </a>
+          <a href="https://facebook.com">
+            <Facebook />
+          </a>
+          <a href="https://linkedin.com">
+            <Linkedin />
+          </a>
         </div>
       </div>
     </section>

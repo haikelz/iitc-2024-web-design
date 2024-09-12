@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
+import { ChildrenProps } from "@/types";
 
-export default function Layout({ children }: { children: ReactNode }) {
+export default function Layout({ children }: ChildrenProps) {
   return <main>{children}</main>;
 }
