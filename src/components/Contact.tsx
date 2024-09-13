@@ -73,10 +73,10 @@ export default function Contact() {
             </a>
           </div>
         </div>
-        <div className="flex-grow p-5">
-          <div className="space-y-7">
-            <div className="grid grid-cols-1 grid-rows-1 xl:gap-20">
-              <div className="flex flex-col space-y-2">
+        <div className="flex-grow w-full p-5">
+          <div className="space-y-7 w-full">
+            <div className="md:grid md:grid-rows-1 md:gap-20 md:space-y-0 space-y-7 md:grid-cols-2 w-full">
+              <div className="flex flex-col space-y-2 w-full">
                 <label htmlFor="firstName">First Name</label>
                 <input
                   type="text"
@@ -93,7 +93,7 @@ export default function Contact() {
                 />
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-20">
+            <div className="md:grid md:grid-rows-1 md:gap-20 md:space-y-0 space-y-7 md:grid-cols-2 w-full">
               <div className="flex flex-col space-y-2">
                 <label htmlFor="email">Mail</label>
                 <input

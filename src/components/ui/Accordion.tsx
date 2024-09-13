@@ -10,7 +10,7 @@ export default function Accordion({ title, icon }: AccordionProps) {
   const Icon = icon;
 
   return (
-    <div className="flex items-start justify-between md:w-[784px] max-w-full">
+    <div className="flex items-start justify-between lg:w-[784px] max-w-full">
       <div
         className={tw(
           "flex justify-center",

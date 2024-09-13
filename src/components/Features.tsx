@@ -49,7 +49,7 @@ const featuresList = [
 export default function Features() {
   return (
     <section id="features" className="px-6 py-24 w-full bg-lotion">
-      <div className="flex flex-col xl:flex-row space-y-6 xl:space-y-0 justify-between items-center w-full">
+      <div className="flex flex-col xl:flex-row space-y-6 2xl:space-x-0 xl:space-x-10 xl:space-y-0 justify-between items-center w-full">
         <Heading as="h2" className="xl:w-[700px]">
           We have provided quality material materials that you can easily access{" "}
         </Heading>
