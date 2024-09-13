@@ -1,123 +1,60 @@
 import {
-  BadgePercent,
-  BookKey,
+  BadgeCheck,
   BrainCog,
-  ChevronDown,
-  FileCheck2,
   FileClock,
+  FileKey2,
   FileText,
   FolderClosed,
   GraduationCap,
   MonitorCog,
   Trophy,
 } from "lucide-react";
+import Accordion from "./ui/Accordion";
 import { Heading, Paragraph } from "./ui/typography";
 
 export default function Faq() {
   return (
-    <section className="flex justify-center">
+    <section id="faq" className="flex justify-center px-6 py-20">
       <div className="flex flex-col">
-        <div className="text-center mb-3">
+        <div className="text-center">
           <Heading as="h2">Frequently Asked Question</Heading>
-          <Paragraph>Quick answers to questions you may here</Paragraph>
+          <Paragraph className="mt-1">
+            Quick answers to questions you may here
+          </Paragraph>
         </div>
-        <div className="mt-5 flex justify-between border-b-2">
-          <div className="flex">
-            <GraduationCap className="mr-5" />
-            <Heading as="h4">What is EduVerse?</Heading>
-          </div>
-          <div>
-            <ChevronDown />
-          </div>
-        </div>
-        <div className="mt-5 flex justify-between border-b-2">
-          <div className="flex">
-            <MonitorCog className="mr-5" />
-            <Heading as="h4">Who can use this platform?</Heading>
-          </div>
-          <div>
-            <ChevronDown />
-          </div>
-        </div>
-        <div className="mt-5 flex justify-between border-b-2">
-          <div className="flex">
-            <FileClock className="mr-5" />
-            <Heading as="h4">What is a Flash Quiz?</Heading>
-          </div>
-          <div>
-            <ChevronDown />
-          </div>
-        </div>
-        <div className="mt-5 flex justify-between border-b-2">
-          <div className="flex">
-            <BrainCog className="mr-5" />
-            <Heading as="h4">
-              What are the learning materials available?
-            </Heading>
-          </div>
-          <div>
-            <ChevronDown />
-          </div>
-        </div>
-        <div className="mt-5 flex justify-between border-b-2">
-          <div className="flex">
-            <BookKey className="mr-5" />
-            <Heading as="h4">
-              Can the materials on EduVerse be accessed at any time?
-            </Heading>
-          </div>
-          <div>
-            <ChevronDown />
-          </div>
-        </div>
-        <div className="mt-5 flex justify-between border-b-2">
-          <div className="flex">
-            <FolderClosed className="mr-5" />
-            <Heading as="h4">
-              What are the features on the Eduverse website?
-            </Heading>
-          </div>
-          <div>
-            <ChevronDown />
-          </div>
-        </div>
-        <div className="mt-5 flex justify-between border-b-2">
-          <div className="flex">
-            <FileCheck2 className="mr-5" />
-            <Heading as="h4">How do I take a course at EduVerse?</Heading>
-          </div>
-          <div>
-            <ChevronDown />
-          </div>
-        </div>
-        <div className="mt-5 flex justify-between border-b-2">
-          <div className="flex">
-            <Trophy className="mr-5" />
-            <Heading as="h4">
-              Is there a reward system on this platform?
-            </Heading>
-          </div>
-          <div>
-            <ChevronDown />
-          </div>
-        </div>
-        <div className="mt-5 flex justify-between border-b-2">
-          <div className="flex">
-            <FileText className="mr-5" />
-            <Heading as="h4">How do I view my report card online?</Heading>
-          </div>
-          <div>
-            <ChevronDown />
-          </div>
-        </div>
-        <div className="mt-5 flex justify-between border-b-2">
-          <div className="flex">
-            <BadgePercent className="mr-5" />
-            <Heading as="h4">Is the platform free?</Heading>
-          </div>
-          <div>
-            <ChevronDown />
-          </div>
+        <div className="space-y-8 mt-10">
+          <Accordion icon={GraduationCap} title="What is EduVerse?" />
+          <Accordion icon={MonitorCog} title="Who can use this platform?" />
+          <Accordion icon={FileClock} title="What is a Flash Quiz?" />
+          <Accordion
+            icon={BrainCog}
+            title="What are the learning materials available?"
+          />
+          <Accordion
+            icon={FileKey2}
+            title="Can the materials on EduVerse be accessed at any time?"
+          />
+          <Accordion
+            icon={FolderClosed}
+            title="What are the features on the Eduverse website?"
+          />
+          <Accordion
+            icon={FileClock}
+            title="How do I take a course at EduVerse?"
+          />
+          <Accordion
+            icon={FileText}
+            title="How do I view my report card online?"
+          />
+          <Accordion
+            icon={Trophy}
+            title="Is there a reward system on this platform?"
+          />
+          <Accordion
+            icon={Trophy}
+            title="Is there a reward system on this platform?"
+          />
+          <Accordion icon={BadgeCheck} title="Is the platform free?" />
         </div>
       </div>
     </section>

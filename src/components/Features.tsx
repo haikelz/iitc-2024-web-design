@@ -48,13 +48,13 @@ const featuresList = [
 
 export default function Features() {
   return (
-    <section id="features" className="px-8 py-24 w-full bg-lotion">
-      <div className="flex justify-between items-center w-full">
-        <Heading as="h2" className="w-[600px]">
+    <section id="features" className="px-6 py-24 w-full bg-lotion">
+      <div className="flex flex-col xl:flex-row space-y-6 2xl:space-x-0 xl:space-x-10 xl:space-y-0 justify-between items-center w-full">
+        <Heading as="h2" className="xl:w-[700px]">
           We have provided quality material materials that you can easily access{" "}
         </Heading>
-        <div className="w-[650px]">
-          <Paragraph className="">
+        <div className="xl:w-[650px]">
+          <Paragraph className="text-justify">
             We provide a variety of quality learning materials that are
             specifically designed to help you understand each topic more deeply.
             From comprehensive readings to interactive videos, all materials are
@@ -70,7 +70,7 @@ export default function Features() {
           </Button>
         </div>
       </div>
-      <div className="grid grid-cols-3 w-full grid-rows-1 gap-8 mt-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-full grid-rows-1 gap-8 mt-12">
         {featuresList.map((item) => (
           <div
             key={item.id}

@@ -7,7 +7,7 @@ export function Heading({ as, children, className }: HeadingProps) {
       {as === "h1" ? (
         <h1
           className={tw(
-            "scroll-m-20 text-[64px] leading-snug font-bold tracking-wide",
+            "scroll-m-20 md:text-[64px] text-5xl leading-snug font-bold tracking-wide",
             className
           )}
         >
@@ -16,7 +16,7 @@ export function Heading({ as, children, className }: HeadingProps) {
       ) : as === "h2" ? (
         <h2
           className={tw(
-            "scroll-m-20 text-[52px] leading-snug font-bold tracking-wide",
+            "scroll-m-20 text-4xl md:text-[52px] leading-snug font-bold tracking-wide",
             className
           )}
         >

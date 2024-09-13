@@ -1,3 +1,4 @@
+import { LucideIcon } from "lucide-react";
 import { HTMLAttributes, ReactNode } from "react";
 
 export type ChildrenProps = {
@@ -10,3 +11,8 @@ export type HeadingProps = HTMLAttributes<HTMLHeadingElement> & {
 
 export type ParagraphProps = ChildrenProps &
   HTMLAttributes<HTMLParagraphElement>;
+
+export type AccordionProps = {
+  title: string;
+  icon: LucideIcon;
+};
