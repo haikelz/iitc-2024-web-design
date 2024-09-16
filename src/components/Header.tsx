@@ -40,7 +40,7 @@ export default function Header() {
             <Button
               type="button"
               aria-label="login"
-              className="rounded-full bg-darkSlateGray md:w-fit w-56 text-white font-bold px-5 py-2"
+              className="rounded-full bg-metallicBlue md:w-fit w-56 text-white font-bold px-5 py-2"
             >
               Login
             </Button>
@@ -68,7 +68,7 @@ export default function Header() {
                 <Button
                   type="button"
                   aria-label="login"
-                  className="rounded-full bg-darkSlateGray w-56 text-white font-bold px-5 py-2"
+                  className="rounded-full bg-metallicBlue w-56 text-white font-bold px-5 py-2"
                 >
                   Login
                 </Button>
