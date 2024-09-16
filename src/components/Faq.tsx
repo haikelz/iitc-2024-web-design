@@ -22,7 +22,7 @@ export default function Faq() {
             Quick answers to questions you may here
           </Paragraph>
         </div>
-        <div className="space-y-8 mt-10">
+        <div className="space-y-2 mt-10">
           <Accordion icon={GraduationCap} title="What is EduVerse?" />
           <Accordion icon={MonitorCog} title="Who can use this platform?" />
           <Accordion icon={FileClock} title="What is a Flash Quiz?" />
