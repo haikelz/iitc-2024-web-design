@@ -25,7 +25,7 @@ export function Heading({ as, children, className }: HeadingProps) {
       ) : as === "h3" ? (
         <h3
           className={tw(
-            "scroll-m-20 text-2xl leading-snug font-bold tracking-wide",
+            "scroll-m-20 text-2xl md:text-3xl leading-snug font-bold tracking-wide",
             className
           )}
         >
