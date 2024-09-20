@@ -7,7 +7,7 @@ export default function Button({ children, className, ...props }: ButtonProps) {
   return (
     <button
       className={tw(
-        "bg-darkSlateGray text-xl px-6 py-2 text-white font-bold rounded-full",
+        "bg-metallicBlue text-xl px-6 py-2 text-white font-bold rounded-full",
         className
       )}
       {...props}

@@ -5,11 +5,11 @@ import { Lock, Mail, User } from "lucide-react";
 
 export default function Register() {
   return (
-    <section className="bg-white">
-      <div className="flex flex-col items-center justify-center px-80 py-8 h-screen">
-        <div className="w-full bg-white rounded-2xl border-2 border-[#e5e7eb]">
-          <div className="grid grid-cols-2">
-            <div className="flex flex-col justify-center items-center bg-darkSlateGray m-5 py-40 rounded-xl">
+    <section className="w-full">
+      <div className="flex flex-col items-center justify-center w-full xl:px-20 2xl:px-80 px-8 py-8 min-h-screen">
+        <div className="w-full bg-white rounded-2xl lg:border-2 lg:border-[#e5e7eb]">
+          <div className="lg:grid flex flex-col justify-center items-center lg:grid-cols-2">
+            <div className="lg:flex hidden flex-col justify-center items-center bg-metallicBlue m-5 py-40 rounded-xl">
               <img src="/images/login_image.png" />
               <Heading as="h4" className="text-white my-5">
                 Explore the World of Learning With Fun
@@ -18,9 +18,11 @@ export default function Register() {
                 Positive and fun atmosphere in learning
               </Paragraph>
             </div>
-            <div className="flex flex-col my-auto ml-10 mr-20">
+            <div className="flex flex-col my-auto 2xl:ml-10 lg:ml-6 lg:mr-14 2xl:mr-20">
               <Heading as="h3">Create your account</Heading>
-              <Paragraph>Welcome back! Please enter your details</Paragraph>
+              <Paragraph className="mt-3">
+                Welcome back! Please enter your details
+              </Paragraph>
               <form className="space-y-4 my-5" action="#">
                 <div>
                   <label className="block mb-2 font-medium">Name</label>
@@ -80,22 +82,22 @@ export default function Register() {
                     Or
                   </div>
                 </div>
-                <div className="grid grid-cols-2 pt-3 gap-10">
-                  <Button className="rounded-lg flex justify-center bg-white text-black border text-base font-medium">
+                <div className="pt-3 flex w-full flex-col xl:flex-row space-y-3 xl:space-y-0 justify-center xl:space-x-6 items-center">
+                  <Button className="rounded-lg flex w-full justify-center bg-white text-black border text-base font-medium">
                     <img
                       src="/images/google.png"
                       className="mr-3"
                       alt="Google logo"
                     />
-                    Login with Google
+                    Sign Up with Google
                   </Button>
-                  <Button className="rounded-lg flex justify-center bg-white text-black border text-base font-medium">
+                  <Button className="rounded-lg flex w-full justify-center bg-white text-black border text-base font-medium">
                     <img
                       src="/images/apple.png"
                       className="mr-3"
                       alt="Apple logo"
                     />
-                    Login with Apple
+                    Sign Up with Apple
                   </Button>
                 </div>
                 <Paragraph className="text-base flex justify-center pt-5">

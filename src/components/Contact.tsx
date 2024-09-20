@@ -13,7 +13,7 @@ export default function Contact() {
   return (
     <section id="contact" className="w-full px-0 md:px-6 pt-20 pb-0 md:pb-20">
       <div className="w-full flex-col lg:flex-row p-4 rounded-xl bg-[#FAFAFA] flex justify-center items-start lg:space-x-5">
-        <div className="flex flex-col space-y-10 justify-between items-start bg-darkSlateGray rounded-xl p-10 w-full lg:w-2/5">
+        <div className="flex flex-col space-y-10 justify-between items-start bg-metallicBlue rounded-xl p-10 w-full lg:w-2/5">
           <div>
             <Heading as="h3" className="text-[32px] text-white">
               Contact Information
