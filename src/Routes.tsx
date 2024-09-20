@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import App from "./App";
-import Dashboard from "./pages/Dashboard";
 import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
+import Dashboard from "./pages/dashboard";
 
 export default function WebRoutes() {
   return (
