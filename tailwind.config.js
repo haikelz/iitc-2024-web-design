@@ -9,6 +9,7 @@ export default {
         darkVanilla: "#D7C9AA",
         burntUmber: "#7B2D26",
         lotion: "#FAFAFA",
+        darkSlateGray: "#19535F",
       },
     },
   },
