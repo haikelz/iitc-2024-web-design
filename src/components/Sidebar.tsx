@@ -50,8 +50,8 @@ export default function Sidebar() {
           </div>
           <ul className="flex flex-col mt-8 justify-start items-start w-full space-y-6">
             <li className=" w-full">
-              <button
-                type="button"
+              <a
+                href="/dashboard"
                 className={tw(
                   "flex rounded-md justify-start px-3 py-1.5 space-x-4 items-center w-full",
                   location.pathname === "/dashboard"
@@ -61,15 +61,15 @@ export default function Sidebar() {
               >
                 <img src="/images/home.svg" alt="home" />
                 <Paragraph className="text-xl font-bold">Dashboard</Paragraph>
-              </button>
+              </a>
             </li>
             {routesList.map((item) => (
               <li className=" w-full">
-                <button
-                  type="button"
+                <a
+                  href={item.route}
                   className={tw(
                     "flex rounded-md justify-start px-3 py-1.5 space-x-4 items-center w-full",
-                    location.pathname.includes(item.name)
+                    location.pathname.includes(item.route)
                       ? "bg-[#F4F4F4] border border-gray-300"
                       : ""
                   )}
@@ -78,7 +78,7 @@ export default function Sidebar() {
                   <Paragraph className="text-xl font-bold">
                     {item.name}
                   </Paragraph>
-                </button>
+                </a>
               </li>
             ))}
           </ul>
