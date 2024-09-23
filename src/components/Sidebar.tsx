@@ -1,36 +1,36 @@
 import { tw } from "@/lib/utils";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Heading, Paragraph } from "./ui/typography";
 
 const routesList = [
   {
     id: 1,
     name: "Material",
-    route: "/material",
+    route: "/dashboard/material",
     icon: "/images/material.svg",
   },
   {
     id: 2,
     name: "Quiz",
-    route: "/quiz",
+    route: "/dashboard/quiz",
     icon: "/images/quiz-gray.svg",
   },
   {
     id: 3,
     name: "Course",
-    route: "/course",
+    route: "/dashboard/course",
     icon: "/images/course-gray.svg",
   },
   {
     id: 4,
     name: "Discussion",
-    route: "/discussion",
+    route: "/dashboard/discussion",
     icon: "/images/discussion-gray.svg",
   },
   {
     id: 5,
     name: "Reward",
-    route: "/reward",
+    route: "/dashboard/reward",
     icon: "/images/reward-gray.svg",
   },
 ];
@@ -50,10 +50,10 @@ export default function Sidebar() {
           </div>
           <ul className="flex flex-col mt-8 justify-start items-start w-full space-y-6">
             <li className=" w-full">
-              <a
-                href="/dashboard"
+              <Link
+                to="/dashboard"
                 className={tw(
-                  "flex rounded-md justify-start px-3 py-1.5 space-x-4 items-center w-full",
+                  "flex rounded-md justify-start px-3 py-2 space-x-4 items-center w-full",
                   location.pathname === "/dashboard"
                     ? "bg-[#F4F4F4] border border-gray-300"
                     : ""
@@ -61,14 +61,14 @@ export default function Sidebar() {
               >
                 <img src="/images/home.svg" alt="home" />
                 <Paragraph className="text-xl font-bold">Dashboard</Paragraph>
-              </a>
+              </Link>
             </li>
             {routesList.map((item) => (
               <li className=" w-full">
-                <a
-                  href={item.route}
+                <Link
+                  to={item.route}
                   className={tw(
-                    "flex rounded-md justify-start px-3 py-1.5 space-x-4 items-center w-full",
+                    "flex rounded-md justify-start px-3 py-2 space-x-4 items-center w-full",
                     location.pathname.includes(item.route)
                       ? "bg-[#F4F4F4] border border-gray-300"
                       : ""
@@ -78,26 +78,31 @@ export default function Sidebar() {
                   <Paragraph className="text-xl font-bold">
                     {item.name}
                   </Paragraph>
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
         </div>
         <div className="border-t py-5 px-2 space-y-6 w-full">
-          <button
-            type="button"
-            className="flex rounded-md justify-start px-3 py-1.5 space-x-4 items-center w-full"
+          <Link
+            to="/dashboard/profile"
+            className={tw(
+              "flex rounded-md justify-start px-3 py-2 space-x-4 items-center w-full",
+              location.pathname.includes("/dashboard/profile")
+                ? "bg-[#F4F4F4] border border-gray-300"
+                : ""
+            )}
           >
             <img src="/images/profile-gray.svg" alt="profile" />
             <Paragraph className="text-xl font-bold">Profile</Paragraph>
-          </button>
-          <button
-            type="button"
+          </Link>
+          <a
+            href="/"
             className="flex rounded-md justify-start px-3 py-1.5 space-x-4 items-center w-full"
           >
             <img src="/images/logout.svg" alt="profile" />
             <Paragraph className="text-xl font-bold">Logout</Paragraph>
-          </button>
+          </a>
         </div>
       </div>
     </aside>
