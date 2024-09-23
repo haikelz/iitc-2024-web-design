@@ -9,8 +9,8 @@ export default function Header() {
     <header className="w-full fixed top-0 z-50 bg-white/80 backdrop-blur-md">
       <nav className="flex flex-col justify-center py-4 px-6 items-center w-full">
         <div className="w-full flex justify-between items-center">
-          <a href="" className="font-bold">
-            Logo
+          <a href="/" className="font-bold">
+            <img src="/images/logo.svg" alt="logo" className="w-12 h-12" />
           </a>
           <button
             className="md:hidden block"

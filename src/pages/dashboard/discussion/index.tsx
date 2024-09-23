@@ -2,7 +2,7 @@ import DashboardLayout from "@/components/DashboardLayout";
 import Button from "@/components/ui/Button";
 import Input from "@/components/ui/Input";
 import { Heading, Paragraph } from "@/components/ui/typography";
-import { MessageCircleMore, PenLine, SearchIcon } from "lucide-react";
+import { Heart, MessageCircleMore, PenLine, SearchIcon } from "lucide-react";
 
 export default function Discussion() {
   return (
@@ -16,9 +16,9 @@ export default function Discussion() {
                 <Input
                   type="text"
                   placeholder="Find the materials you need"
-                  className="w-full py-2 rounded-md pl-12 outline-none"
+                  className="w-full py-2 rounded-md pl-12 outline-none border-gray-300"
                 />
-                <div className="absolute text-sm right-3 rounded-md py-1 px-2 bg-gray-400">
+                <div className="absolute text-xs right-3 font-bold rounded-md py-1 px-2 bg-gray-300">
                   Search
                 </div>
               </div>
@@ -29,7 +29,7 @@ export default function Discussion() {
             </Button>
           </section>
           <section className="flex flex-col gap-3">
-            <div className="border p-5 rounded-md flex-col">
+            <div className="border p-5 rounded-md bg-white flex-col">
               <Heading as="h3" className="mb-3">
                 Atomic Constituent Particles
               </Heading>
@@ -64,12 +64,13 @@ export default function Discussion() {
                   <MessageCircleMore className="mr-3" />
                   Add Response
                 </Button>
-                <Button className="rounded-md bg-[#e5e7eb] text-black">
-                  Add Response
+                <Button className="rounded-md bg-[#e5e7eb] text-black flex justify-center items-center space-x-3">
+                  <Heart className="fill-red-500 stroke-red-500" />
+                  <Paragraph className="font-bold">12</Paragraph>
                 </Button>
               </div>
             </div>
-            <div className="border p-5 rounded-md flex-col">
+            <div className="border p-5 rounded-md bg-white flex-col">
               <Heading as="h3" className="mb-3">
                 Atomic Constituent Particles
               </Heading>
@@ -104,12 +105,13 @@ export default function Discussion() {
                   <MessageCircleMore className="mr-3" />
                   Add Response
                 </Button>
-                <Button className="rounded-md bg-[#e5e7eb] text-black">
-                  Add Response
+                <Button className="rounded-md bg-[#e5e7eb] text-black flex justify-center items-center space-x-3">
+                  <Heart className="fill-red-500 stroke-red-500" />
+                  <Paragraph className="font-bold">27</Paragraph>
                 </Button>
               </div>
             </div>
-            <div className="border p-5 rounded-md flex-col">
+            <div className="border p-5 rounded-md bg-white flex-col">
               <Heading as="h3" className="mb-3">
                 Atomic Constituent Particles
               </Heading>
@@ -144,46 +146,49 @@ export default function Discussion() {
                   <MessageCircleMore className="mr-3" />
                   Add Response
                 </Button>
-                <Button className="rounded-md bg-[#e5e7eb] text-black">
-                  Add Response
+                <Button className="rounded-md bg-[#e5e7eb] text-black flex justify-center items-center space-x-3">
+                  <Heart className="fill-red-500 stroke-red-500" />
+                  <Paragraph className="font-bold">27</Paragraph>
                 </Button>
               </div>
             </div>
           </section>
         </div>
-        <div className="w-1/4 p-4 border rounded-md break-words">
+        <aside className="w-1/4 p-6 bg-white border rounded-2xl break-words">
           <Heading as="h3">Top Discussion</Heading>
-          <div className="overflow-hidden overflow-ellipsis whitespace-nowrap">
-            <Paragraph className="truncate">
-              1. Atomic Constituent Particles
-            </Paragraph>
-            <Paragraph className="text-base">1069 Replies</Paragraph>
+          <div className="space-y-5 mt-6">
+            <div className="overflow-hidden overflow-ellipsis whitespace-nowrap">
+              <Paragraph className="truncate font-bold">
+                1. Atomic Constituent Particles
+              </Paragraph>
+              <Paragraph className="text-base">1069 Replies</Paragraph>
+            </div>
+            <div className="overflow-hidden overflow-ellipsis whitespace-nowrap">
+              <Paragraph className="truncate font-bold">
+                2. Electron Configuration
+              </Paragraph>
+              <Paragraph className="text-base">776 Replies</Paragraph>
+            </div>
+            <div className="overflow-hidden overflow-ellipsis whitespace-nowrap">
+              <Paragraph className="truncate font-bold">
+                3. Atonic Quantum Theory and Relativity
+              </Paragraph>
+              <Paragraph className="text-base">1069 Replies</Paragraph>
+            </div>
+            <div className="overflow-hidden overflow-ellipsis whitespace-nowrap">
+              <Paragraph className="truncate font-bold">
+                4. Gravitational Time Dilatation
+              </Paragraph>
+              <Paragraph className="text-base">452 Replies</Paragraph>
+            </div>
+            <div className="overflow-hidden overflow-ellipsis whitespace-nowrap">
+              <Paragraph className="truncate font-bold">
+                5. Einstein's Field Equation
+              </Paragraph>
+              <Paragraph className="text-base">107 Replies</Paragraph>
+            </div>
           </div>
-          <div className="overflow-hidden overflow-ellipsis whitespace-nowrap">
-            <Paragraph className="truncate">
-              2. Electron Configuration
-            </Paragraph>
-            <Paragraph className="text-base">776 Replies</Paragraph>
-          </div>
-          <div className="overflow-hidden overflow-ellipsis whitespace-nowrap">
-            <Paragraph className="truncate">
-              3. Atonic Quantum Theory and Relativity
-            </Paragraph>
-            <Paragraph className="text-base">1069 Replies</Paragraph>
-          </div>
-          <div className="overflow-hidden overflow-ellipsis whitespace-nowrap">
-            <Paragraph className="truncate">
-              4. Gravitational Time Dilatation
-            </Paragraph>
-            <Paragraph className="text-base">452 Replies</Paragraph>
-          </div>
-          <div className="overflow-hidden overflow-ellipsis whitespace-nowrap">
-            <Paragraph className="truncate">
-              5. Einstein's Field Equation
-            </Paragraph>
-            <Paragraph className="text-base">107 Replies</Paragraph>
-          </div>
-        </div>
+        </aside>
       </section>
     </DashboardLayout>
   );
