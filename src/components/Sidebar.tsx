@@ -1,6 +1,6 @@
 import { tw } from "@/lib/utils";
 import { Link, useLocation } from "react-router-dom";
-import { Heading, Paragraph } from "./ui/typography";
+import { Paragraph } from "./ui/typography";
 
 const routesList = [
   {
@@ -43,12 +43,9 @@ export default function Sidebar() {
       <div className="p-6 flex justify-between items-center min-h-full flex-col">
         <div className="min-h-full w-full">
           <div className="flex justify-center items-center flex-col space-y-4">
-            <img src="/images/logo.svg" alt="logo" className="w-14 h-14" />
-            <Heading as="h3" className="text-2xl text-center font-bold mb-8">
-              EduVerse
-            </Heading>
+            <img src="/images/logo.svg" alt="logo" className="w-20 h-20" />
           </div>
-          <ul className="flex flex-col mt-8 justify-start items-start w-full space-y-6">
+          <ul className="flex flex-col mt-12 justify-start items-start w-full space-y-6">
             <li className=" w-full">
               <Link
                 to="/dashboard"
