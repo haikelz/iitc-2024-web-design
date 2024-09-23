@@ -62,7 +62,7 @@ export const PhysicsList = [
   },
 ];
 
-export default function Material() {
+export default function Course() {
   return (
     <div className="flex min-h-screen">
       <Sidebar />
@@ -151,7 +151,7 @@ export default function Material() {
                   </button>
                 </div>
                 <Paragraph className="text-white">
-                  {item.totalQuestions} Students
+                  {item.totalQuestions} Questions
                 </Paragraph>
               </div>
             </div>
