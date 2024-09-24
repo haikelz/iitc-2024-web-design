@@ -9,6 +9,8 @@ import Material from "./pages/dashboard/material";
 import Profile from "./pages/dashboard/profile";
 import Quiz from "./pages/dashboard/quiz";
 import Reward from "./pages/dashboard/reward";
+import Test from "./pages/dashboard/quiz/test";
+import Score from "./pages/dashboard/quiz/score";
 
 export default function App() {
   return (
@@ -19,6 +21,8 @@ export default function App() {
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/dashboard/material" element={<Material />} />
       <Route path="/dashboard/quiz" element={<Quiz />} />
+      <Route path="/dashboard/quiz/quantities-and-units" element={<Test />} />
+      <Route path="/dashboard/quiz/score" element={<Score />} />
       <Route path="/dashboard/course" element={<Course />} />
       <Route path="/dashboard/discussion" element={<Discussion />} />
       <Route path="/dashboard/reward" element={<Reward />} />
