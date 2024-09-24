@@ -1,4 +1,3 @@
-import Button from "@/components/ui/Button";
 import { Heading, Paragraph } from "@/components/ui/typography";
 
 export default function Score() {
@@ -18,8 +17,18 @@ export default function Score() {
         <Paragraph>
           Congratulations on successfully completing the quiz
         </Paragraph>
-        <Button className="rounded-md">Do it again</Button>
-        <Button className="rounded-md">Leaderboard</Button>
+        <a
+          href="/dashboard/quiz/quantities-and-units"
+          className="flex justify-center rounded-md bg-metallicBlue text-xl px-6 py-2 text-white font-bold"
+        >
+          Do it again
+        </a>
+        <a
+          href="/dashboard"
+          className="flex justify-center rounded-md bg-metallicBlue text-xl px-6 py-2 text-white font-bold"
+        >
+          Leaderboard
+        </a>
       </div>
     </main>
   );
