@@ -1,5 +1,6 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Button from "./ui/Button";
 
 export default function Header() {
@@ -36,7 +37,7 @@ export default function Header() {
               <a href="#contact">Contact</a>
             </li>
           </ul>
-          <a href="/auth/login" className="hidden md:block">
+          <Link to="/auth/login" className="hidden md:block">
             <Button
               type="button"
               aria-label="login"
@@ -44,7 +45,7 @@ export default function Header() {
             >
               Login
             </Button>
-          </a>
+          </Link>
         </div>
         {isOpen ? (
           <ul className="md:hidden mt-4 text-center space-y-4 font-semibold md:space-x-12">
