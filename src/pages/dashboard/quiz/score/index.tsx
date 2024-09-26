@@ -1,3 +1,4 @@
+import Button from "@/components/ui/Button";
 import { Heading, Paragraph } from "@/components/ui/typography";
 
 export default function Score() {
@@ -17,11 +18,8 @@ export default function Score() {
         <Paragraph>
           Congratulations on successfully completing the quiz
         </Paragraph>
-        <a
-          href="/dashboard/quiz/quantities-and-units"
-          className="flex justify-center rounded-md bg-metallicBlue text-xl px-6 py-2 text-white font-bold"
-        >
-          Do it again
+        <a href="/dashboard/quiz/newtons-law" className="w-full">
+          <Button className="w-full rounded-lg">Do it Again</Button>
         </a>
         <a
           href="/dashboard/quiz/leaderboard"

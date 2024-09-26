@@ -7,16 +7,17 @@ import Dashboard from "./pages/dashboard";
 import Course from "./pages/dashboard/course";
 import Discussion from "./pages/dashboard/discussion";
 import Material from "./pages/dashboard/material";
+import DetailMaterial from "./pages/dashboard/material/detail";
 import Profile from "./pages/dashboard/profile";
 import Quiz from "./pages/dashboard/quiz";
-import Reward from "./pages/dashboard/reward";
-import Test from "./pages/dashboard/quiz/test";
 import Score from "./pages/dashboard/quiz/score";
 import Leaderboard from "./pages/dashboard/quiz/leaderboard";
 import CourseMaterial from "./pages/dashboard/course/material";
 import QuizCourseScore from "./pages/dashboard/course/score";
 import QuizCourse from "./pages/dashboard/course/quiz";
 import Raport from "./pages/dashboard/course/raport";
+import Test from "./pages/dashboard/quiz/test";
+import Reward from "./pages/dashboard/reward";
 
 export default function App() {
   const location = useLocation();
@@ -30,6 +31,7 @@ export default function App() {
           <Route path="/auth/register" element={<Register />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/dashboard/material" element={<Material />} />
+          <Route path="/dashboard/material/:detail" element={<DetailMaterial />} />
           <Route path="/dashboard/quiz" element={<Quiz />} />
           <Route
             path="/dashboard/quiz/quantities-and-units"

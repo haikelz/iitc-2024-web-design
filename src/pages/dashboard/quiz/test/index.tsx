@@ -14,59 +14,54 @@ export default function Test() {
                   07m:15s
                 </Heading>
               </div>
-              <ul className="flex flex-col mt-8 w-full space-y-6 items-center">
-                <li className="flex gap-3">
-                  <Button className="rounded-md bg-[#d1d5db] text-black">
-                    1
-                  </Button>
-                  <Button className="rounded-md bg-[#d1d5db] text-black">
-                    2
-                  </Button>
-                  <Button className="rounded-md bg-[#d1d5db] text-black">
-                    3
-                  </Button>
-                  <Button className="rounded-md bg-[#d1d5db] text-black">
-                    4
-                  </Button>
-                  <Button className="rounded-md bg-[#d1d5db] text-black">
-                    5
-                  </Button>
-                </li>
-                <li className="flex gap-3">
-                  <Button className="rounded-md bg-[#d1d5db] text-black">
-                    1
-                  </Button>
-                  <Button className="rounded-md bg-[#d1d5db] text-black">
-                    2
-                  </Button>
-                  <Button className="rounded-md bg-[#d1d5db] text-black">
-                    3
-                  </Button>
-                  <Button className="rounded-md bg-[#d1d5db] text-black">
-                    4
-                  </Button>
-                  <Button className="rounded-md bg-[#d1d5db] text-black">
-                    5
-                  </Button>
-                </li>
-                <li className="flex gap-3">
-                  <Button className="rounded-md bg-white text-black border-2">
-                    1
-                  </Button>
-                  <Button className="rounded-md bg-white text-black border-2">
-                    2
-                  </Button>
-                  <Button className="rounded-md bg-white text-black border-2">
-                    3
-                  </Button>
-                  <Button className="rounded-md bg-white text-black border-2">
-                    4
-                  </Button>
-                  <Button className="rounded-md bg-white text-black border-2">
-                    5
-                  </Button>
-                </li>
-              </ul>
+              <div className="grid grid-cols-5 mt-6 gap-4 grid-rows-1 w-full">
+                <Button className="rounded-md bg-[#d1d5db] text-black">
+                  1
+                </Button>
+                <Button className="rounded-md bg-[#d1d5db] text-black">
+                  2
+                </Button>
+                <Button className="rounded-md bg-[#d1d5db] text-black">
+                  3
+                </Button>
+                <Button className="rounded-md bg-[#d1d5db] text-black">
+                  4
+                </Button>
+                <Button className="rounded-md bg-[#d1d5db] text-black">
+                  5
+                </Button>
+                <Button className="rounded-md bg-[#d1d5db] text-black">
+                  1
+                </Button>
+                <Button className="rounded-md bg-[#d1d5db] text-black">
+                  2
+                </Button>
+                <Button className="rounded-md bg-[#d1d5db] text-black">
+                  3
+                </Button>
+                <Button className="rounded-md bg-[#d1d5db] text-black">
+                  4
+                </Button>
+                <Button className="rounded-md bg-[#d1d5db] text-black">
+                  5
+                </Button>
+
+                <Button className="rounded-md bg-white text-black border-2">
+                  1
+                </Button>
+                <Button className="rounded-md bg-white text-black border-2">
+                  2
+                </Button>
+                <Button className="rounded-md bg-white text-black border-2">
+                  3
+                </Button>
+                <Button className="rounded-md bg-white text-black border-2">
+                  4
+                </Button>
+                <Button className="rounded-md bg-white text-black border-2">
+                  5
+                </Button>
+              </div>
             </div>
           </div>
         </aside>
@@ -74,7 +69,7 @@ export default function Test() {
           <section className="w-full flex justify-between items-center">
             <div className="space-y-4 border-b w-full">
               <Heading as="h3" className="text-2xl font-bold mb-8">
-                Quantities and Units
+                Newton's Law
               </Heading>
             </div>
           </section>
@@ -82,11 +77,10 @@ export default function Test() {
             <div className="flex flex-row items-center space-x-3">
               <Paragraph className="font-bold">16.</Paragraph>
               <Paragraph className="flex-1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-                ipsum dolor sit, amet consectetur adipisicing elit. Veniam
-                corporis alias non rem soluta excepturi quaerat atque
-                voluptates, cum suscipit! Reprehenderit saepe praesentium
-                maxime, temporibus amet fuga ipsa nobis alias laudantium earum?
+                A box with a mass of 5 kg is on a flat surface without friction.
+                A horizontal force of 20 N is applied to the box. Based on
+                Newton's Second Law, what is the acceleration that a box
+                undergoes?
               </Paragraph>
             </div>
             <div className="flex flex-col space-y-2 ml-10">
