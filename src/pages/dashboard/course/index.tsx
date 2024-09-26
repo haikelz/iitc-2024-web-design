@@ -9,6 +9,7 @@ export const PhysicsList = [
   {
     id: 1,
     name: "Quantities and Units",
+    route: "/dashboard/course/quantities-and-units",
     level: "Grade 11",
     totalQuestions: 211,
     bgGrade: "bg-viridianGreen",
@@ -18,6 +19,7 @@ export const PhysicsList = [
   {
     id: 2,
     name: "Measurement",
+    route: "/dashboard/course/measurement",
     level: "Grade 11",
     totalQuestions: 22,
     bgGrade: "bg-[#B74757]",
@@ -27,6 +29,7 @@ export const PhysicsList = [
   {
     id: 3,
     name: "Theory of Relativity",
+    route: "/dashboard/course/theory-of-relativity",
     level: "Grade 11",
     totalQuestions: 126,
     bgGrade: "bg-[#2E6B9B]",
@@ -36,6 +39,7 @@ export const PhysicsList = [
   {
     id: 4,
     name: "Newton's Law",
+    route: "/dashboard/course/newton%27s-law",
     level: "Grade 11",
     totalQuestions: 657,
     bgGrade: "bg-[#2E6B9B]",
@@ -45,6 +49,7 @@ export const PhysicsList = [
   {
     id: 5,
     name: "Laws of Thermodynamics",
+    route: "/dashboard/course/laws-of-thermodynamics",
     level: "Grade 11",
     totalQuestions: 43,
     bgGrade: "bg-[#2E6B9B]",
@@ -54,6 +59,7 @@ export const PhysicsList = [
   {
     id: 6,
     name: "Fluid Mechanics",
+    route: "/dashboard/course/fluid-mechanics",
     level: "Grade 11",
     totalQuestions: 112,
     bgGrade: "bg-[#2E6B9B]",
@@ -183,7 +189,7 @@ export default function Course() {
       </section>
       <div className="grid grid-cols-3 gap-8 mt-4 grid-rows-1 w-full">
         {PhysicsList.map((item) => (
-          <div className={tw("rounded-2xl w-full", item.bgColor)}>
+          <a href={item.route} className={tw("rounded-2xl w-full", item.bgColor)}>
             <img
               loading="lazy"
               src={item.images}
@@ -207,7 +213,7 @@ export default function Course() {
                 {item.totalQuestions} Questions
               </Paragraph>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </DashboardLayout>

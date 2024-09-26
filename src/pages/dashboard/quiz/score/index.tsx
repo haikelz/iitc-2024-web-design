@@ -24,7 +24,7 @@ export default function Score() {
           Do it again
         </a>
         <a
-          href="/dashboard"
+          href="/dashboard/quiz/leaderboard"
           className="flex justify-center rounded-md bg-metallicBlue text-xl px-6 py-2 text-white font-bold"
         >
           Leaderboard
