@@ -11,6 +11,11 @@ import Quiz from "./pages/dashboard/quiz";
 import Reward from "./pages/dashboard/reward";
 import Test from "./pages/dashboard/quiz/test";
 import Score from "./pages/dashboard/quiz/score";
+import Leaderboard from "./pages/dashboard/quiz/leaderboard";
+import CourseMaterial from "./pages/dashboard/course/material";
+import QuizCourseScore from "./pages/dashboard/course/score";
+import QuizCourse from "./pages/dashboard/course/quiz";
+import Raport from "./pages/dashboard/course/raport";
 
 export default function App() {
   return (
@@ -23,7 +28,12 @@ export default function App() {
       <Route path="/dashboard/quiz" element={<Quiz />} />
       <Route path="/dashboard/quiz/quantities-and-units" element={<Test />} />
       <Route path="/dashboard/quiz/score" element={<Score />} />
+      <Route path="/dashboard/quiz/leaderboard" element={<Leaderboard />} />
       <Route path="/dashboard/course" element={<Course />} />
+      <Route path="/dashboard/course/quantities-and-units" element={<CourseMaterial />} />
+      <Route path="/dashboard/course/quiz" element={<QuizCourse />} />
+      <Route path="/dashboard/course/quiz/score" element={<QuizCourseScore />} />
+      <Route path="/dashboard/course/quiz/raport" element={<Raport />} />
       <Route path="/dashboard/discussion" element={<Discussion />} />
       <Route path="/dashboard/reward" element={<Reward />} />
       <Route path="/dashboard/profile" element={<Profile />} />
