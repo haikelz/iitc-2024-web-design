@@ -1,4 +1,5 @@
-import { Route, Routes } from "react-router-dom";
+import { AnimatePresence, domAnimation, LazyMotion } from "framer-motion";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages";
 import Login from "./pages/auth/login";
 import Register from "./pages/auth/register";
@@ -18,25 +19,40 @@ import QuizCourse from "./pages/dashboard/course/quiz";
 import Raport from "./pages/dashboard/course/raport";
 
 export default function App() {
+  const location = useLocation();
+
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/auth/login" element={<Login />} />
-      <Route path="/auth/register" element={<Register />} />
-      <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/dashboard/material" element={<Material />} />
-      <Route path="/dashboard/quiz" element={<Quiz />} />
-      <Route path="/dashboard/quiz/quantities-and-units" element={<Test />} />
-      <Route path="/dashboard/quiz/score" element={<Score />} />
-      <Route path="/dashboard/quiz/leaderboard" element={<Leaderboard />} />
-      <Route path="/dashboard/course" element={<Course />} />
-      <Route path="/dashboard/course/quantities-and-units" element={<CourseMaterial />} />
-      <Route path="/dashboard/course/quiz" element={<QuizCourse />} />
-      <Route path="/dashboard/course/quiz/score" element={<QuizCourseScore />} />
-      <Route path="/dashboard/course/quiz/raport" element={<Raport />} />
-      <Route path="/dashboard/discussion" element={<Discussion />} />
-      <Route path="/dashboard/reward" element={<Reward />} />
-      <Route path="/dashboard/profile" element={<Profile />} />
-    </Routes>
+    <LazyMotion features={domAnimation}>
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Home />} />
+          <Route path="/auth/login" element={<Login />} />
+          <Route path="/auth/register" element={<Register />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/dashboard/material" element={<Material />} />
+          <Route path="/dashboard/quiz" element={<Quiz />} />
+          <Route
+            path="/dashboard/quiz/quantities-and-units"
+            element={<Test />}
+          />
+          <Route path="/dashboard/quiz/score" element={<Score />} />
+          <Route path="/dashboard/quiz/leaderboard" element={<Leaderboard />} />
+          <Route path="/dashboard/course" element={<Course />} />
+          <Route
+            path="/dashboard/course/quantities-and-units"
+            element={<CourseMaterial />}
+          />
+          <Route path="/dashboard/course/quiz" element={<QuizCourse />} />
+          <Route
+            path="/dashboard/course/quiz/score"
+            element={<QuizCourseScore />}
+          />
+          <Route path="/dashboard/course/quiz/raport" element={<Raport />} />
+          <Route path="/dashboard/discussion" element={<Discussion />} />
+          <Route path="/dashboard/reward" element={<Reward />} />
+          <Route path="/dashboard/profile" element={<Profile />} />
+        </Routes>
+      </AnimatePresence>
+    </LazyMotion>
   );
 }
