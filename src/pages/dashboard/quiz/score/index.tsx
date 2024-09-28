@@ -21,9 +21,12 @@ export default function Score() {
         <a href="/dashboard/quiz/newtons-law" className="w-full">
           <Button className="w-full rounded-lg">Do it Again</Button>
         </a>
-        <Button className="w-full text-gray-700 border border-gray-300 bg-gray-100 rounded-lg">
+        <a
+          href="/dashboard/quiz/leaderboard"
+          className="flex justify-center rounded-md bg-metallicBlue text-xl px-6 py-2 text-white font-bold"
+        >
           Leaderboard
-        </Button>
+        </a>
       </div>
     </main>
   );
