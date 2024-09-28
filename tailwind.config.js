@@ -10,7 +10,7 @@ export default {
         burntUmber: "#7B2D26",
         lotion: "#FAFAFA",
         darkSlateGray: "#19535F",
-        waterSpout: "#95FAE9",
+        waterSpout: "#F3D8D9",
         viridianGreen: "#089991",
         chineseYellow: "#FFB000",
         smokyTopaz: "#9C3848",
