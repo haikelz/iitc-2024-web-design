@@ -58,7 +58,7 @@ export const popularQuizList = [
     level: "Easy",
     totalQuestions: 30,
     bgGrade: "bg-[#2E6B9B]",
-    images: "/images/argumentative-text-bg.png",
+    images: "/images/atomic-structures-bg-2.png",
     bgColor: "bg-metallicBlue",
   },
 ];
@@ -103,7 +103,7 @@ export default function Dashboard() {
                     alt="science"
                   />
                 </div>
-                <button className="rounded-lg text-center px-4 py-1 bg-white">
+                <button className="rounded-lg text-center px-1.5 py-1 bg-white">
                   <Paragraph className="leading-none -translate-y-1">
                     ...
                   </Paragraph>
@@ -150,11 +150,13 @@ export default function Dashboard() {
         </Heading>
         <div className="grid grid-cols-3 gap-8 mt-4 grid-rows-1 w-full">
           {popularQuizList.map((item) => (
-            <div className={tw("rounded-2xl w-full", item.bgColor)}>
+            <div
+              className={tw("rounded-2xl overflow-hidden w-full", item.bgColor)}
+            >
               <img
                 loading="lazy"
                 src={item.images}
-                className="w-full"
+                className="w-full rounded-t-2xl"
                 alt={item.name}
               />
               <div className="w-full p-4 space-y-1 mt-4">

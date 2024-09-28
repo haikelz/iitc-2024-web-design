@@ -79,16 +79,16 @@ export default function Course() {
             <Input
               type="text"
               placeholder="Find the materials you need"
-              className="sm:w-96 w-full py-2 bg-white border rounded-lg border-gray-300 pl-12 outline-none"
+              className="sm:w-96 w-full py-3 bg-white border rounded-lg border-gray-300 pl-12 outline-none"
             />
             <div className="absolute text-sm right-3 rounded-md py-1 px-2 bg-gray-200">
               <Paragraph className="text-xs font-bold">Search</Paragraph>
             </div>
           </div>
         </div>
-        <div className="flex justify-between items-center my-5">
+        <div className="flex justify-between items-center my-8">
           <div className="relative inline-block w-40">
-            <select className="block appearance-none w-full bg-white border border-gray-300 font-bold placeholder:text-gray-700 py-2 px-3 pr-8 rounded-lg leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+            <select className="block appearance-none w-full bg-white border py-4 border-gray-300 font-bold placeholder:text-gray-700 px-3 pr-8 rounded-lg leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
               <option>Grade 10</option>
               <option>Grade 11</option>
               <option>Grade 12</option>
@@ -105,11 +105,11 @@ export default function Course() {
           </div>
           <div>
             <div className="flex gap-5">
-              <Button className="rounded-lg bg-white border border-gray-300 flex justify-center items-center space-x-3">
+              <Button className="rounded-lg bg-white border border-gray-300 py-3 flex justify-center items-center space-x-3">
                 <img src="/images/Category.svg" alt="" />
                 <Paragraph className="font-bold">All</Paragraph>
               </Button>
-              <Button className="rounded-lg bg-white border border-gray-300 flex justify-center items-center space-x-3">
+              <Button className="rounded-lg bg-white border border-gray-300 py-3 flex justify-center items-center space-x-3">
                 <svg
                   width="24"
                   height="28"
@@ -125,7 +125,7 @@ export default function Course() {
 
                 <Paragraph className="font-bold">Nature Science</Paragraph>
               </Button>
-              <Button className="rounded-lg bg-white border border-gray-300 flex justify-center items-center space-x-3">
+              <Button className="rounded-lg bg-white border border-gray-300 py-3 flex justify-center items-center space-x-3">
                 <svg
                   width="23"
                   height="23"
@@ -140,7 +140,7 @@ export default function Course() {
                 </svg>
                 <Paragraph className="font-bold">Social Science</Paragraph>
               </Button>
-              <Button className="rounded-lg bg-white border border-gray-300 flex justify-center items-center space-x-3">
+              <Button className="rounded-lg bg-white border border-gray-300 py-3 flex justify-center items-center space-x-3">
                 <svg
                   width="24"
                   height="24"
@@ -160,27 +160,27 @@ export default function Course() {
         </div>
         <div>
           <div className="flex gap-3">
-            <Button className="border border-gray-300 flex justify-center items-center space-x-3 bg-white">
+            <Button className="border border-gray-300 flex justify-center items-center py-2.5 space-x-3 bg-white">
               <img src="/images/Category.svg" alt="" />
               <Paragraph className="font-bold">All</Paragraph>
             </Button>
-            <Button className="border border-gray-300 flex justify-center items-center space-x-3 bg-white">
+            <Button className="border border-gray-300 flex justify-center items-center py-2.5 space-x-3 bg-white">
               <img src="/images/icons8-biology.svg" alt="" />
               <Paragraph className="font-bold">Biology</Paragraph>
             </Button>
-            <Button className="border border-gray-300 flex justify-center items-center space-x-3 bg-white">
+            <Button className="border border-gray-300 flex justify-center items-center py-2.5 space-x-3 bg-white">
               <img src="/images/icons8-chemistry.svg" alt="" />
               <Paragraph className="font-bold">Chemistry</Paragraph>
             </Button>
-            <Button className="border border-gray-300 flex justify-center items-center space-x-3 bg-white">
+            <Button className="border border-gray-300 flex justify-center items-center py-2.5 space-x-3 bg-white">
               <img src="/images/icons8-physics.svg" alt="" />
               <Paragraph className="font-bold">Physics</Paragraph>
             </Button>
-            <Button className="border border-gray-300 flex justify-center items-center space-x-3 bg-white">
+            <Button className="border border-gray-300 flex justify-center items-center py-2.5 space-x-3 bg-white">
               <img src="/images/icons8-mathematics.svg" alt="" />
               <Paragraph className="font-bold">Mathematics</Paragraph>
             </Button>
-            <Button className="border border-gray-300 flex justify-center items-center space-x-3 bg-white">
+            <Button className="border border-gray-300 flex justify-center items-center py-2.5 space-x-3 bg-white">
               <img src="/images/religion.png" alt="" className="w-6 h-6" />
               <Paragraph className="font-bold">Religious Education</Paragraph>
             </Button>
@@ -189,11 +189,14 @@ export default function Course() {
       </section>
       <div className="grid grid-cols-3 gap-8 mt-4 grid-rows-1 w-full">
         {PhysicsList.map((item) => (
-          <a href={item.route} className={tw("rounded-2xl w-full", item.bgColor)}>
+          <a
+            href={item.route}
+            className={tw("rounded-2xl w-full", item.bgColor)}
+          >
             <img
               loading="lazy"
               src={item.images}
-              className="w-full"
+              className="w-full rounded-t-2xl"
               alt={item.name}
             />
             <div className="w-full p-4 space-y-1 mt-4">
