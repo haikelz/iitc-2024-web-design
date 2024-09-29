@@ -12,6 +12,7 @@ export const progressList = [
     progress: "75%",
     images: "/images/science.svg",
     bgColor: "bg-pineGreen",
+    bgIcon: "bg-waterSpout",
   },
   {
     id: 2,
@@ -21,6 +22,8 @@ export const progressList = [
     progress: "100%",
     images: "/images/man.svg",
     bgColor: "bg-smokyTopaz",
+    bgIcon: "bg-redGiant",
+
   },
   {
     id: 3,
@@ -30,6 +33,7 @@ export const progressList = [
     progress: "25%",
     images: "/images/languages.svg",
     bgColor: "bg-metallicBlue",
+    bgIcon: "bg-blueOrca",
   },
 ];
 
@@ -95,7 +99,7 @@ export default function Dashboard() {
           {progressList.map((item) => (
             <div className={tw("rounded-2xl p-4", item.bgColor)}>
               <div className="flex justify-between w-full items-start">
-                <div className="rounded-full flex justify-center items-center bg-waterSpout h-10 w-10">
+                <div className={tw("rounded-full flex justify-center items-center h-10 w-10", item.bgIcon)}>
                   <img
                     loading="lazy"
                     src={item.images}
