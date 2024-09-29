@@ -10,61 +10,61 @@ export const PhysicsList = [
     id: 1,
     name: "Quantities and Units",
     route: "/dashboard/quiz/quantities-and-units",
-    level: "Grade 11",
-    totalQuestions: 211,
-    bgGrade: "bg-viridianGreen",
-    images: "/images/argumentative-text-bg.png",
-    bgColor: "bg-pineGreen",
+    level: "Medium",
+    totalQuestions: 20,
+    bgGrade: "bg-[#2E6B9B]",
+    images: "/images/quantity.jpg",
+    bgColor: "bg-metallicBlue",
   },
   {
     id: 2,
     name: "Measurement",
     route: "/dashboard/quiz/measurement",
-    level: "Grade 11",
-    totalQuestions: 22,
+    level: "Hard",
+    totalQuestions: 10,
     bgGrade: "bg-[#B74757]",
-    images: "/images/economic-principles-bg.png",
+    images: "/images/measurement.png",
     bgColor: "bg-smokyTopaz",
   },
   {
     id: 3,
     name: "Theory of Relativity",
     route: "/dashboard/quiz/theory-of-relativity",
-    level: "Grade 11",
-    totalQuestions: 126,
-    bgGrade: "bg-[#2E6B9B]",
-    images: "/images/argumentative-text-bg.png",
-    bgColor: "bg-metallicBlue",
+    level: "Easy",
+    totalQuestions: 30,
+    bgGrade: "bg-viridianGreen",
+    images: "/images/theory.jpg",
+    bgColor: "bg-pineGreen",
   },
   {
     id: 4,
     name: "Newton's Law",
     route: "/dashboard/quiz/newton%27s-law",
-    level: "Grade 11",
-    totalQuestions: 657,
-    bgGrade: "bg-[#2E6B9B]",
-    images: "/images/argumentative-text-bg.png",
-    bgColor: "bg-metallicBlue",
+    level: "Easy",
+    totalQuestions: 30,
+    bgGrade: "bg-viridianGreen",
+    images: "/images/newton.jpg",
+    bgColor: "bg-pineGreen",
   },
   {
     id: 5,
     name: "Laws of Thermodynamics",
     route: "/dashboard/quiz/laws-of-thermodynamics",
-    level: "Grade 11",
-    totalQuestions: 43,
+    level: "Medium",
+    totalQuestions: 20,
     bgGrade: "bg-[#2E6B9B]",
-    images: "/images/argumentative-text-bg.png",
+    images: "/images/laws.jpg",
     bgColor: "bg-metallicBlue",
   },
   {
     id: 6,
     name: "Fluid Mechanics",
     route: "/dashboard/quiz/fluid-mechanics",
-    level: "Grade 11",
-    totalQuestions: 112,
-    bgGrade: "bg-[#2E6B9B]",
-    images: "/images/argumentative-text-bg.png",
-    bgColor: "bg-metallicBlue",
+    level: "Hard",
+    totalQuestions: 10,
+    bgGrade: "bg-[#B74757]",
+    images: "/images/fluid.jpg",
+    bgColor: "bg-smokyTopaz",
   },
 ];
 
@@ -109,7 +109,7 @@ export default function Quiz() {
                 <img src="/images/Category.svg" alt="" />
                 <Paragraph className="font-bold">All</Paragraph>
               </Button>
-              <Button className="rounded-lg bg-white border border-gray-300 py-3 flex justify-center items-center space-x-3">
+              <Button className="rounded-lg bg-gray-300 border border-gray-300 py-3 flex justify-center items-center space-x-3">
                 <svg
                   width="24"
                   height="28"
@@ -172,7 +172,7 @@ export default function Quiz() {
               <img src="/images/icons8-chemistry.svg" alt="" />
               <Paragraph className="font-bold">Chemistry</Paragraph>
             </Button>
-            <Button className="border border-gray-300 flex justify-center items-center py-2.5 space-x-3 bg-white">
+            <Button className="border border-gray-300 flex justify-center items-center py-2.5 space-x-3 bg-gray-300">
               <img src="/images/icons8-physics.svg" alt="" />
               <Paragraph className="font-bold">Physics</Paragraph>
             </Button>
@@ -196,7 +196,7 @@ export default function Quiz() {
             <img
               loading="lazy"
               src={item.images}
-              className="w-full rounded-t-2xl"
+              className="w-full rounded-t-2xl max-h-[170px] object-cover"
               alt={item.name}
             />
             <div className="w-full p-4 space-y-1 mt-4">

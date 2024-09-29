@@ -12,7 +12,7 @@ export const PhysicsList = [
     level: "Grade 11",
     totalQuestions: 211,
     bgGrade: "bg-viridianGreen",
-    images: "/images/argumentative-text-bg.png",
+    images: "/images/quantity.jpg",
     bgColor: "bg-pineGreen",
   },
   {
@@ -21,7 +21,7 @@ export const PhysicsList = [
     level: "Grade 11",
     totalQuestions: 22,
     bgGrade: "bg-[#B74757]",
-    images: "/images/economic-principles-bg.png",
+    images: "/images/measurement.png",
     bgColor: "bg-smokyTopaz",
   },
   {
@@ -30,7 +30,7 @@ export const PhysicsList = [
     level: "Grade 11",
     totalQuestions: 126,
     bgGrade: "bg-[#2E6B9B]",
-    images: "/images/argumentative-text-bg.png",
+    images: "/images/theory.jpg",
     bgColor: "bg-metallicBlue",
   },
   {
@@ -39,7 +39,7 @@ export const PhysicsList = [
     level: "Grade 11",
     totalQuestions: 657,
     bgGrade: "bg-[#2E6B9B]",
-    images: "/images/argumentative-text-bg.png",
+    images: "/images/newton.jpg",
     bgColor: "bg-metallicBlue",
   },
   {
@@ -47,18 +47,18 @@ export const PhysicsList = [
     name: "Laws of Thermodynamics",
     level: "Grade 11",
     totalQuestions: 43,
-    bgGrade: "bg-[#2E6B9B]",
-    images: "/images/argumentative-text-bg.png",
-    bgColor: "bg-metallicBlue",
+    bgGrade: "bg-[#B74757]",
+    images: "/images/laws.jpg",
+    bgColor: "bg-smokyTopaz",
   },
   {
     id: 6,
     name: "Fluid Mechanics",
     level: "Grade 11",
     totalQuestions: 112,
-    bgGrade: "bg-[#2E6B9B]",
-    images: "/images/argumentative-text-bg.png",
-    bgColor: "bg-metallicBlue",
+    bgGrade: "bg-viridianGreen",
+    images: "/images/fluid.jpg",
+    bgColor: "bg-pineGreen",
   },
 ];
 
@@ -103,7 +103,7 @@ export default function Material() {
                 <img src="/images/Category.svg" alt="" />
                 <Paragraph className="font-bold">All</Paragraph>
               </Button>
-              <Button className="rounded-lg bg-white border border-gray-300 py-3 flex justify-center items-center space-x-3">
+              <Button className="rounded-lg bg-gray-300 border border-gray-300 py-3 flex justify-center items-center space-x-3">
                 <svg
                   width="24"
                   height="28"
@@ -166,7 +166,7 @@ export default function Material() {
               <img src="/images/icons8-chemistry.svg" alt="" />
               <Paragraph className="font-bold">Chemistry</Paragraph>
             </Button>
-            <Button className="border border-gray-300 flex justify-center items-center py-2.5 space-x-3 bg-white">
+            <Button className="border border-gray-300 flex justify-center items-center py-2.5 space-x-3 bg-gray-300">
               <img src="/images/icons8-physics.svg" alt="" />
               <Paragraph className="font-bold">Physics</Paragraph>
             </Button>
@@ -187,7 +187,7 @@ export default function Material() {
             <img
               loading="lazy"
               src={item.images}
-              className="w-full rounded-t-2xl"
+              className="w-full rounded-t-2xl max-h-[170px] object-cover"
               alt={item.name}
             />
             <div className="w-full p-4 space-y-1 mt-4">

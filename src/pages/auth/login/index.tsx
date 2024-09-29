@@ -35,7 +35,7 @@ export default function Login() {
                   <label className="block mb-2 font-medium">Email</label>
                   <div className="relative">
                     <Input
-                      className="rounded-lg border text-base border-gray-300 py-1.5 px-3 pl-12 w-full"
+                      className="rounded-lg border text-base border-gray-300 py-3 px-3 pl-12 w-full"
                       placeholder="Enter your email address"
                       type="text"
                     />
@@ -46,7 +46,7 @@ export default function Login() {
                   <label className="block mb-2 font-medium">Password</label>
                   <div className="relative">
                     <Input
-                      className="rounded-lg border text-base border-gray-300 py-1.5 px-3 pl-12 w-full"
+                      className="rounded-lg border text-base border-gray-300 py-3 px-3 pl-12 w-full"
                       placeholder="Enter your password"
                       type="password"
                     />
@@ -73,7 +73,7 @@ export default function Login() {
                 <div>
                   <Button
                     onClick={handleSignIn}
-                    className="w-full rounded-lg mt-5"
+                    className="w-full rounded-lg mt-5 py-3"
                   >
                     Sign In
                   </Button>
@@ -84,7 +84,7 @@ export default function Login() {
                   </div>
                 </div>
                 <div className="pt-3 flex w-full flex-col xl:flex-row space-y-3 xl:space-y-0 justify-center xl:space-x-6 items-center">
-                  <Button className="rounded-lg flex w-full justify-center bg-white text-black border text-base font-medium">
+                  <Button className="rounded-lg flex w-full justify-center bg-white text-black border text-base font-medium py-3">
                     <img
                       src="/images/google.png"
                       className="mr-3"
@@ -92,7 +92,7 @@ export default function Login() {
                     />
                     Login with Google
                   </Button>
-                  <Button className="rounded-lg flex w-full justify-center bg-white text-black border text-base font-medium">
+                  <Button className="rounded-lg flex w-full justify-center bg-white text-black border text-base font-medium py-3">
                     <img
                       src="/images/apple.png"
                       className="mr-3"
@@ -105,7 +105,7 @@ export default function Login() {
                   Don&apos;t have an account?
                   <a
                     href="/auth/register"
-                    className="text-base ml-1 hover:underline"
+                    className="text-base ml-1 hover:underline text-metallicBlue font-medium"
                   >
                     Create an account
                   </a>

@@ -16,8 +16,8 @@ export default function Profile() {
               className="border-2 w-24 h-24 border-blue-400 rounded-full"
             />
             <div>
-              <Paragraph className="font-bold text-2xl">Verstappen</Paragraph>
-              <Paragraph>Grade 12</Paragraph>
+              <Paragraph className="font-bold text-3xl">Verstappen</Paragraph>
+              <Paragraph className="text-xl">Grade 12</Paragraph>
             </div>
           </div>
         </section>
