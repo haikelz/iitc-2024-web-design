@@ -21,14 +21,14 @@ export default function Register() {
             <div className="flex flex-col my-auto 2xl:ml-10 lg:ml-6 lg:mr-14 2xl:mr-20">
               <Heading as="h3">Create your account</Heading>
               <Paragraph className="mt-3">
-                Welcome back! Please enter your details
+                Welcome to EduVerse! Please enter your details
               </Paragraph>
               <form className="space-y-4 my-5" action="#">
                 <div>
                   <label className="block mb-2 font-medium">Name</label>
                   <div className="relative">
                     <Input
-                      className="rounded-lg border text-base border-gray-300 py-1.5 px-3 pl-12 w-full"
+                      className="rounded-lg border text-base border-gray-300 py-3 px-3 pl-12 w-full"
                       placeholder="Enter your name"
                       type="text"
                     />
@@ -39,7 +39,7 @@ export default function Register() {
                   <label className="block mb-2 font-medium">Email</label>
                   <div className="relative">
                     <Input
-                      className="rounded-lg border text-base border-gray-300 py-1.5 px-3 pl-12 w-full"
+                      className="rounded-lg border text-base border-gray-300 py-3 px-3 pl-12 w-full"
                       placeholder="Enter your email address"
                       type="text"
                     />
@@ -50,7 +50,7 @@ export default function Register() {
                   <label className="block mb-2 font-medium">Password</label>
                   <div className="relative">
                     <Input
-                      className="rounded-lg border text-base border-gray-300 py-1.5 px-3 pl-12 w-full"
+                      className="rounded-lg border text-base border-gray-300 py-3 px-3 pl-12 w-full"
                       placeholder="Enter your password"
                       type="password"
                     />
@@ -75,7 +75,7 @@ export default function Register() {
                   </a>
                 </div>
                 <div>
-                  <Button className="w-full rounded-lg mt-5">Sign Up</Button>
+                  <Button className="w-full rounded-lg mt-5 py-3">Sign Up</Button>
                 </div>
                 <div className="my-12 border-b-2 text-center">
                   <div className="leading-none px-7 inline-block text-sm tracking-wide font-medium bg-white transform translate-y-2.5">
@@ -83,7 +83,7 @@ export default function Register() {
                   </div>
                 </div>
                 <div className="pt-3 flex w-full flex-col xl:flex-row space-y-3 xl:space-y-0 justify-center xl:space-x-6 items-center">
-                  <Button className="rounded-lg flex w-full justify-center bg-white text-black border text-base font-medium">
+                  <Button className="rounded-lg flex w-full justify-center bg-white text-black border text-base font-medium py-3">
                     <img
                       src="/images/google.png"
                       className="mr-3"
@@ -91,7 +91,7 @@ export default function Register() {
                     />
                     Sign Up with Google
                   </Button>
-                  <Button className="rounded-lg flex w-full justify-center bg-white text-black border text-base font-medium">
+                  <Button className="rounded-lg flex w-full justify-center bg-white text-black border text-base font-medium py-3">
                     <img
                       src="/images/apple.png"
                       className="mr-3"
@@ -104,7 +104,7 @@ export default function Register() {
                   Already have an account?
                   <a
                     href="/auth/login"
-                    className="text-base ml-1 hover:underline"
+                    className="text-base ml-1 hover:underline font-medium text-metallicBlue"
                   >
                     Sign in
                   </a>

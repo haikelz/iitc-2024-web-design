@@ -103,7 +103,7 @@ export default function Dashboard() {
                   <img
                     loading="lazy"
                     src={item.images}
-                    className="h-6 w-6"
+                    className="h-6 w-15"
                     alt="science"
                   />
                 </div>
@@ -160,7 +160,7 @@ export default function Dashboard() {
               <img
                 loading="lazy"
                 src={item.images}
-                className="w-full rounded-t-2xl"
+                className="w-full rounded-t-2xl max-h-[170px] object-cover"
                 alt={item.name}
               />
               <div className="w-full p-4 space-y-1 mt-4">

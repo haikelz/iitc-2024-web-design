@@ -18,11 +18,11 @@ export default function Contact() {
             <Heading as="h3" className="text-[32px] text-white">
               Contact Information
             </Heading>
-            <Paragraph className="text-white text-justify mt-2">
+            <Paragraph className="text-white text-justify mt-4">
               Any ideas or questions? We are here to help and will respond to
               your message as soon as possible
             </Paragraph>
-            <div className="mt-10 space-y-5">
+            <div className="mt-16 space-y-5 mb-20">
               <div className="flex flex-row">
                 <div className="mt-1">
                   <Mail className="text-white" />

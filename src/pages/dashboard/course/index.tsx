@@ -8,63 +8,63 @@ import { SearchIcon } from "lucide-react";
 export const PhysicsList = [
   {
     id: 1,
-    name: "Quantities and Units",
+    name: "Electrochemical",
     route: "/dashboard/course/quantities-and-units",
-    level: "Grade 11",
-    totalQuestions: 211,
+    level: "Grade 12",
+    totalQuestions: 212,
     bgGrade: "bg-viridianGreen",
-    images: "/images/argumentative-text-bg.png",
+    images: "/images/6170021_24121.jpg",
     bgColor: "bg-pineGreen",
   },
   {
     id: 2,
-    name: "Measurement",
+    name: "Organic Chemistry",
     route: "/dashboard/course/measurement",
-    level: "Grade 11",
+    level: "Grade 12",
     totalQuestions: 22,
     bgGrade: "bg-[#B74757]",
-    images: "/images/economic-principles-bg.png",
+    images: "/images/4300239_17962.jpg",
     bgColor: "bg-smokyTopaz",
   },
   {
     id: 3,
-    name: "Theory of Relativity",
+    name: "Polymer",
     route: "/dashboard/course/theory-of-relativity",
-    level: "Grade 11",
+    level: "Grade 12",
     totalQuestions: 126,
     bgGrade: "bg-[#2E6B9B]",
-    images: "/images/argumentative-text-bg.png",
+    images: "/images/1269646_155484-OVE78C-34.jpg",
     bgColor: "bg-metallicBlue",
   },
   {
     id: 4,
-    name: "Newton's Law",
+    name: "Electrolyte Solution",
     route: "/dashboard/course/newton%27s-law",
-    level: "Grade 11",
+    level: "Grade 12",
     totalQuestions: 657,
     bgGrade: "bg-[#2E6B9B]",
-    images: "/images/argumentative-text-bg.png",
+    images: "/images/newton.jpg",
     bgColor: "bg-metallicBlue",
   },
   {
     id: 5,
-    name: "Laws of Thermodynamics",
+    name: "Thermochemistry",
     route: "/dashboard/course/laws-of-thermodynamics",
-    level: "Grade 11",
+    level: "Grade 12",
     totalQuestions: 43,
-    bgGrade: "bg-[#2E6B9B]",
-    images: "/images/argumentative-text-bg.png",
-    bgColor: "bg-metallicBlue",
+    bgGrade: "bg-viridianGreen",
+    images: "/images/10882134_4570246.jpg",
+    bgColor: "bg-pineGreen",
   },
   {
     id: 6,
-    name: "Fluid Mechanics",
+    name: "Atomic Structure",
     route: "/dashboard/course/fluid-mechanics",
-    level: "Grade 11",
+    level: "Grade 12",
     totalQuestions: 112,
-    bgGrade: "bg-[#2E6B9B]",
-    images: "/images/argumentative-text-bg.png",
-    bgColor: "bg-metallicBlue",
+    bgGrade: "bg-[#B74757]",
+    images: "/images/26213351_g8ph_6l2c_211214.jpg",
+    bgColor: "bg-smokyTopaz",
   },
 ];
 
@@ -109,7 +109,7 @@ export default function Course() {
                 <img src="/images/Category.svg" alt="" />
                 <Paragraph className="font-bold">All</Paragraph>
               </Button>
-              <Button className="rounded-lg bg-white border border-gray-300 py-3 flex justify-center items-center space-x-3">
+              <Button className="rounded-lg bg-gray-300 border border-gray-300 py-3 flex justify-center items-center space-x-3">
                 <svg
                   width="24"
                   height="28"
@@ -168,7 +168,7 @@ export default function Course() {
               <img src="/images/icons8-biology.svg" alt="" />
               <Paragraph className="font-bold">Biology</Paragraph>
             </Button>
-            <Button className="border border-gray-300 flex justify-center items-center py-2.5 space-x-3 bg-white">
+            <Button className="border border-gray-300 flex justify-center items-center py-2.5 space-x-3 bg-gray-300">
               <img src="/images/icons8-chemistry.svg" alt="" />
               <Paragraph className="font-bold">Chemistry</Paragraph>
             </Button>
@@ -196,7 +196,7 @@ export default function Course() {
             <img
               loading="lazy"
               src={item.images}
-              className="w-full rounded-t-2xl"
+              className="w-full rounded-t-2xl max-h-[170px] object-cover"
               alt={item.name}
             />
             <div className="w-full p-4 space-y-1 mt-4">
@@ -213,7 +213,7 @@ export default function Course() {
                 </button>
               </div>
               <Paragraph className="text-white">
-                {item.totalQuestions} Questions
+                {item.totalQuestions} Students
               </Paragraph>
             </div>
           </a>
